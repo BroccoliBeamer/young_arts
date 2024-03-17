@@ -5,7 +5,7 @@ import 'package:young_arts/features/profile/domain/entities/user_profile.dart';
 import 'package:young_arts/features/profile/domain/repositories/user_profile_repository.dart';
 
 class GetUser implements UseCase<UserProfile, NoParams> {
-  final UserProfileRepository repository;
+  final UserRepository repository;
 
   GetUser(this.repository);
   @override
