@@ -1,3 +1,4 @@
+import 'package:young_arts/features/artwork/domain/entities/artwork.dart';
 import 'package:young_arts/features/profile/domain/entities/user_profile.dart';
 
 class UserProfileModel extends UserProfile {
@@ -9,6 +10,7 @@ class UserProfileModel extends UserProfile {
     required super.role,
     required super.school,
     required super.yearGroup,
+    super.artworks,
     super.createdAt,
     super.updatedAt,
   });
@@ -21,6 +23,7 @@ class UserProfileModel extends UserProfile {
     'role',
     'school',
     'yearGroup',
+    'artworks',
     'createdAt',
     'updatedAt',
   ];
@@ -34,6 +37,7 @@ class UserProfileModel extends UserProfile {
       role: json['role'],
       school: json['school'],
       yearGroup: json['yearGroup'],
+      artworks: json['artworks'],
       createdAt: json['createdAt'],
       updatedAt: json['updatedAt'],
     );
@@ -48,6 +52,7 @@ class UserProfileModel extends UserProfile {
       'role': super.role,
       'school': super.school,
       'yearGroup': super.yearGroup,
+      'artworks': super.artworks,
       'createdAt': super.createdAt,
       'updatedAt': super.updatedAt,
     };
@@ -64,6 +69,7 @@ class UserProfileModel extends UserProfile {
     String? role,
     String? school,
     String? yearGroup,
+    List<Artwork>? artworks,
     DateTime? createdAt,
     DateTime? updatedAt,
   }) {
@@ -75,6 +81,7 @@ class UserProfileModel extends UserProfile {
       role: role ?? super.role,
       school: school ?? super.school,
       yearGroup: yearGroup ?? super.yearGroup,
+      artworks: artworks ?? super.artworks,
       createdAt: createdAt ?? super.createdAt,
       updatedAt: updatedAt ?? super.updatedAt,
     );
@@ -88,6 +95,8 @@ class UserProfileModel extends UserProfile {
         super.email,
         super.role,
         super.school,
+        super.yearGroup,
+        super.artworks,
         super.createdAt,
         super.updatedAt,
       ];

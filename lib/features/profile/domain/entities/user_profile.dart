@@ -1,4 +1,5 @@
 import 'package:equatable/equatable.dart';
+import 'package:young_arts/features/artwork/domain/entities/artwork.dart';
 
 class UserProfile extends Equatable {
   final int id;
@@ -8,6 +9,7 @@ class UserProfile extends Equatable {
   final String role;
   final String school;
   final String? yearGroup;
+  final List<Artwork>? artworks;
   final DateTime? createdAt;
   final DateTime? updatedAt;
 
@@ -19,6 +21,7 @@ class UserProfile extends Equatable {
     required this.role,
     required this.school,
     this.yearGroup,
+    this.artworks,
     this.createdAt,
     this.updatedAt,
   });
@@ -32,6 +35,7 @@ class UserProfile extends Equatable {
         role,
         school,
         yearGroup,
+        artworks,
         createdAt,
         updatedAt,
       ];
@@ -44,6 +48,7 @@ class UserProfile extends Equatable {
     String? role,
     String? school,
     String? yearGroup,
+    List<Artwork>? artworks,
     DateTime? createdAt,
     DateTime? updatedAt,
   }) {
@@ -55,6 +60,7 @@ class UserProfile extends Equatable {
       role: role ?? this.role,
       school: school ?? this.school,
       yearGroup: yearGroup ?? this.yearGroup,
+      artworks: artworks ?? this.artworks,
       createdAt: createdAt ?? this.createdAt,
       updatedAt: updatedAt ?? this.updatedAt,
     );
