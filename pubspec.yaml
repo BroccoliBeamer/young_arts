@@ -10,6 +10,7 @@ environment:
   sdk: '>=3.3.1 <4.0.0'
 
 dependencies:
+  dartz: ^0.10.1
 
   # Flutter dependencies.
   flutter:
@@ -21,7 +22,6 @@ dependencies:
   use_case: ^1.1.5
 
 dev_dependencies:
-  dartz: ^0.10.1
   equatable: ^2.0.5
   mockito: ^5.4.4
   flutter_test:

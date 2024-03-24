@@ -2,12 +2,12 @@
 import 'package:mockito/mockito.dart';
 import 'package:young_arts/common/image_resources.dart';
 import 'package:young_arts/features/artwork/domain/entities/artwork.dart';
-import 'package:young_arts/features/profile/data/models/user_profile_model.dart';
+import 'package:young_arts/features/profile/domain/entities/user_profile.dart';
 
 class MockService extends Mock {
-  Future<List<UserProfileModel>> fetchUsers() async {
+  Future<List<UserProfile>> fetchUsers() async {
     return [
-      const UserProfileModel(
+      const UserProfile(
         id: 1,
         firstName: 'John',
         lastName: 'Doe',
@@ -25,7 +25,7 @@ class MockService extends Mock {
           ),
         ],
       ),
-      const UserProfileModel(
+      const UserProfile(
         id: 2,
         firstName: 'Jane',
         lastName: 'Doe',
@@ -43,7 +43,7 @@ class MockService extends Mock {
           ),
         ],
       ),
-      const UserProfileModel(
+      const UserProfile(
         id: 3,
         firstName: 'Alice',
         lastName: 'Smith',
@@ -61,7 +61,7 @@ class MockService extends Mock {
           ),
         ],
       ),
-      const UserProfileModel(
+      const UserProfile(
         id: 4,
         firstName: 'Bob',
         lastName: 'Johnson',
@@ -79,7 +79,7 @@ class MockService extends Mock {
           ),
         ],
       ),
-      const UserProfileModel(
+      const UserProfile(
         id: 5,
         firstName: 'Charlie',
         lastName: 'Brown',
@@ -111,7 +111,7 @@ class MockService extends Mock {
           ),
         ],
       ),
-      const UserProfileModel(
+      const UserProfile(
         id: 6,
         firstName: 'David',
         lastName: 'Williams',
@@ -129,7 +129,7 @@ class MockService extends Mock {
           ),
         ],
       ),
-      const UserProfileModel(
+      const UserProfile(
         id: 7,
         firstName: 'Eva',
         lastName: 'Jones',
@@ -154,7 +154,7 @@ class MockService extends Mock {
           ),
         ],
       ),
-      const UserProfileModel(
+      const UserProfile(
         id: 8,
         firstName: 'Frank',
         lastName: 'Taylor',
@@ -172,7 +172,7 @@ class MockService extends Mock {
           ),
         ],
       ),
-      const UserProfileModel(
+      const UserProfile(
         id: 9,
         firstName: 'Grace',
         lastName: 'Anderson',
@@ -190,7 +190,7 @@ class MockService extends Mock {
           ),
         ],
       ),
-      const UserProfileModel(
+      const UserProfile(
         id: 10,
         firstName: 'Harry',
         lastName: 'Thomas',
@@ -215,7 +215,7 @@ class MockService extends Mock {
           ),
         ],
       ),
-      const UserProfileModel(
+      const UserProfile(
         id: 11,
         firstName: 'Ivy',
         lastName: 'Jackson',
@@ -240,7 +240,7 @@ class MockService extends Mock {
           ),
         ],
       ),
-      const UserProfileModel(
+      const UserProfile(
         id: 12,
         firstName: 'Jack',
         lastName: 'White',
@@ -258,7 +258,7 @@ class MockService extends Mock {
           ),
         ],
       ),
-      const UserProfileModel(
+      const UserProfile(
         id: 13,
         firstName: 'Kate',
         lastName: 'Harris',
@@ -276,7 +276,7 @@ class MockService extends Mock {
           ),
         ],
       ),
-      const UserProfileModel(
+      const UserProfile(
         id: 14,
         firstName: 'Luke',
         lastName: 'Martin',
@@ -294,7 +294,7 @@ class MockService extends Mock {
           ),
         ],
       ),
-      const UserProfileModel(
+      const UserProfile(
         id: 15,
         firstName: 'Mia',
         lastName: 'Thompson',
@@ -312,7 +312,7 @@ class MockService extends Mock {
           ),
         ],
       ),
-      const UserProfileModel(
+      const UserProfile(
         id: 16,
         firstName: 'Nick',
         lastName: 'Garcia',
@@ -337,7 +337,7 @@ class MockService extends Mock {
           ),
         ],
       ),
-      const UserProfileModel(
+      const UserProfile(
         id: 17,
         firstName: 'Olivia',
         lastName: 'Martinez',
