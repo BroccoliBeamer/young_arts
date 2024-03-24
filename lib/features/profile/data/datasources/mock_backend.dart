@@ -1,4 +1,3 @@
-// mock_service.dart
 import 'package:mockito/mockito.dart';
 import 'package:young_arts/common/image_resources.dart';
 import 'package:young_arts/features/artwork/domain/entities/artwork.dart';
